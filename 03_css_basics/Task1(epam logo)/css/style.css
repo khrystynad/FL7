@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+}
+
+p{
+	font-size: 130px;
+	font-family: 'Oswald', helvetica, sans-serif, arial;;
+	color: #464547;
+	text-align: center;
+	letter-spacing: -3.5px;
+	transform: scaleY(1.2);
+	margin: 0 auto;
+
+}
+
+p span{
+	color: #39C2D7;
+	font-size: 130px;
+	display: inline-block;
+	margin: 0 5px;
+	transform: scale(0.9,0.95);
+}
+

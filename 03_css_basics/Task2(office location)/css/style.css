@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	width: 100%;
+	font-family: 'source-sans-pro-regular',sans-serif,helvetica,arial;
+}
+
+main{
+	margin: 50px auto;
+	width: 1400px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+    font-size: 0;
+}
+
+/* general country block */
+.country-box{
+	width: calc(25% - 40px);
+	display: inline-block;
+	margin: 20px;
+	vertical-align: top;
+}
+
+.country-img-box{
+	background: white;
+	height: 280px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.country-img-box 
+.country-img{
+	width: 100%;
+	height: 100%;
+}
+
+.country-caption{
+	background-color:rgba(0,0,0,.5);
+	width: 100%;
+	position: absolute;	
+	top:230px;
+	left: 0;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+	transition: all .5s;
+}
+
+/* country name */
+.country-caption h2{
+	height: 50px;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+/* count of cities */
+.country-caption p{
+	font-weight: bold;
+	font-size: 25px;
+	margin: 50px 0;
+}
+
+.country-caption p span{
+	font-size: 130px;
+	font-weight: bold;
+	display: block;
+	font-weight: bold;
+}
+
+.country-caption a{
+	color: white;
+	text-decoration: none;
+}
+
+/* animation */
+.country-img-box:hover 
+.country-caption{
+	display: block;
+	opacity: 1;
+	top: -20%;
+	height: 120%;
+}
+
+/* expanded block */
+#expanded-block{
+	margin: 25px 0 -15px 0;
+    font-size: 20px;
+	display: block;
+	width: calc( 1400px - 120px );
+	height: 350px;
+	padding: 30px 40px;	
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	position: relative;
+	display: none;
+}
+
+/* triangle pointer */
+#expanded-block::before, #expanded-block::after{
+	bottom: 100%;
+	left: calc( (25% - 20px) / 2);
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	
+}
+
+#expanded-block::after{
+	border-color: transparent;
+	border-bottom-color: #f7f7f7;
+	border-width: 6px;
+	margin-left: -6px;
+}
+
+#expanded-block::before{
+	border-color: transparent;
+	border-bottom-color: #ccc;
+	border-width: 7px;
+	margin-left: -7px;
+}
+/*-------------------------------*/
+
+/* country name in expanded block*/
+#expanded-block h2{
+	color:#39c2d7;
+	font-family: 'Oswald', helvetica, sans-serif, arial;
+	font-size: 2.2rem;
+	line-height: 2.5rem;
+	letter-spacing: -2.0px;
+	text-transform: uppercase;
+	font-stretch: condensed;
+	padding-left: 50px;
+}
+
+#expanded-block
+.city-item{
+	float: left;
+	border-right: 1px solid #ccc;
+	height: 220px;
+	margin-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* show expanded block or no */
+#expanded-block:target{
+	display: block;
+}
+
+#expanded-block:not(:target){
+	display: none;
+}
+
+#expanded-block
+.city-item:last-child{
+	border: none;
+}
+
+/* location image */
+#expanded-block
+.city-item 
+.location{
+	width: 17px;
+	height: 17px;
+	float: left;
+	margin-left: -25px;
+}
+
+/* city name */
+#expanded-block
+.city-item h3{
+	font-size: 18px;
+	color: #464547;
+	font-family: 'source-sans-pro-bold',sans-serif,helvetica,arial;
+}
+
+#expanded-block
+.city-item 
+.adress{
+	margin-top: 20px;
+	font-size: 14px;
+	font-family: 'source-sans-pro-regular',sans-serif,helvetica,arial;
+	color: #464547;
+	padding-bottom: 5px;
+}
+
+/* Map */
+#expanded-block
+.city-item a{
+	color: #7f993a;
+	text-decoration: none;
+	font-family: 'source-sans-pro-bold',sans-serif,helvetica,arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* close expanded block */
+#expanded-block .close{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+#expanded-block
+.city-item p{
+	margin-top: 10px;
+	font-size: 14px;
+	font-family: 'source-sans-pro-regular',sans-serif,helvetica,arial;
+	color: #464547;
+	padding-bottom: 5px;
+}
+
+#expanded-block
+.city-item 
+.phone{
+	margin-top: 20px;
+	padding-bottom: 2px;
+}
+
+#expanded-block
+.city-item 
+.fax{
+	margin-top: 0px;
+}
+
+#expanded-block
+.city-item 
+.phone a{
+	color: #464547;
+	font-family: 'source-sans-pro-regular',sans-serif,helvetica,arial;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+#expanded-block
+.city-item 
+.phone a:hover{
+	text-decoration: none;
+}
+
+
+
+
+
