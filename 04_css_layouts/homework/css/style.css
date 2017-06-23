@@ -1,0 +1,495 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face { 
+	 font-family: Fugue;
+	 src: url(../fonts/fugue_regular.woff);
+}
+
+@font-face { 
+	 font-family: BauPro;
+	 src: url(../fonts/329A31_1_0.woff2);
+}
+
+@font-face { 
+	 font-family: BauProMedium;
+	 src: url(../fonts/329A31_0_0.woff2);
+}
+
+@font-face{
+    font-family:'Fugue Tails';
+    src:url(../fonts/font-cache.woff);
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	width: 1366px;
+	margin: 0 auto;
+}
+
+/* gradient */
+header{
+	background: linear-gradient(to left, #9edae4, #c9ccc3, #d7c7b5, #b2b2be);
+}
+
+.gradient-background, footer{
+	background: linear-gradient(to left, #a4d5dc, #e8c7a6, #b4b2bd);
+}
+/* ---------------------------- */
+
+header{
+	width: 100%;
+	height: 230px;
+	position: relative;
+}
+
+.logo-img{
+	width: 300px;
+	position: absolute;
+	left: 53px;
+	top: 58px;
+}
+
+header h1 a{
+	font-family: Fugue;
+	font-size: 52px;
+	font-weight: 500;
+	display: inline-block;
+	position: absolute;
+	right: 100px;
+	bottom: 55px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.header-nav{
+	width: calc( 100% - 210px) ;
+	padding: 30px 105px;
+	height: 33px;
+}
+
+nav ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li{
+	margin-right: 60px;
+	text-align: right;
+}
+
+nav ul li:nth-of-type(1){
+	margin-left: 0;
+}
+
+nav ul li:nth-of-type(4){
+	margin-right: 0;
+}
+
+nav ul li a{
+    font: 400 18px BauPro;
+    line-height: 1.7em;
+    display: inline-block;
+    text-decoration:none;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+/* hover animation */
+.header-nav a:after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: black;
+    transition: width .2s ease-in-out;
+}
+
+.bottom-nav a:after, .contact a:after, .location a span:after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    transition: width .2s ease-in-out;
+}
+
+a:hover:after, .header-nav .hovered:after, .contact a:hover:after, .location a:hover span:after{
+    width: 100%;    
+}
+/* ------------------------- */
+
+.about-container{
+	padding: 160px 95px 0 95px;
+}
+
+.about{
+	font: 400 60px 'Fugue Tails', sans-serif;
+	margin-bottom: 142px;
+}
+
+.first{
+	font-family: 'BauPro', sans-serif;
+    margin-bottom: 110px;
+}
+
+.section-caption{
+	font: 400 18px 'BauProMedium';
+	line-height: 1.6em;
+}
+
+.text{
+	padding-left: 610px;
+	width: calc( 100% - 610px );
+}
+
+#arrow{
+	float: left;
+	width: 35px;
+	margin-top: 12px;
+	margin-left: 17px;
+}
+
+.paragraph, .type-сonstituents li{
+	 font: 400 18px 'BauPro', sans-serif;
+	 margin-top: 20px;
+	 line-height: 1.7em;
+}
+
+.alone{
+	margin-top: 0;
+}
+
+.title{
+	font: 400 48px Fugue;
+}
+
+.article-first h3{
+	margin-left: 70px;
+	width: 650px;
+	z-index: 2;
+	position: relative;
+}
+
+.article-first{
+	margin-bottom: 95px;
+}
+
+.two-images1{
+	position: relative;
+	height: 755px;
+	margin-top: -70px;
+	z-index: 1;
+}
+
+.two-images1 img:nth-of-type(1){
+	position: absolute;
+	width: 565px;
+	height: 752px;
+	right: 103px;
+	z-index: 1;
+}
+
+.two-images1 img:nth-of-type(2){
+	position: absolute;
+	z-index: 2;
+	width: 465px;
+	height: 310px;
+	left: 200px;
+	top: 170px;
+}
+
+.two-images2{
+	margin-top: 175px;
+	position: relative;
+	overflow: hidden;
+}
+
+.two-images2 img:nth-of-type(1){
+	width: 465px;
+	float: left;
+}
+
+.two-images2 img:nth-of-type(2){
+	width: 365px;
+	float: right;
+	padding-top: 105px;
+}
+
+.article-second{
+	margin-top: 125px;
+	overflow: hidden;
+}
+
+.article-second h3{
+	margin-right: 400px;
+	width: calc( 100% - 400px );
+	margin-bottom: 115px;
+}
+
+.type-section{
+	float: left;
+}
+
+.type-section img{
+	margin: 35px 0 20px 0;
+	height: 35px;
+}
+
+.type-section h4{
+	font: 400 40px 'Fugue Tails';
+}
+
+.type-section{
+	margin-right: 90px;
+	text-align: center;
+	width: calc( 100%/3 - 60px );
+}
+
+.type-section:nth-of-type(3){
+	margin-right: 0;
+}
+
+.type-сonstituents li:nth-of-type(1){
+	margin: 0;
+}
+
+.two-images3{
+	margin: 105px 0 155px 0;
+}
+
+.two-images3 img:nth-of-type(1){
+	width: 670px;
+	margin-right: 35px;
+}
+
+.two-images3 img:nth-of-type(2){
+	width: 265px;
+	margin-bottom: 40px;
+}
+
+.article-third{
+	margin-top: 115px;
+}
+
+.article-third h3{
+	margin: 0 300px 0 70px;
+	width: calc( 100% - 370px );
+	z-index: 2;
+	position: relative;
+}
+
+.two-images4{
+	margin-top: -52px;
+	z-index: 1;
+	position: relative;
+	height: 620px;
+}
+
+.two-images4 img:nth-of-type(1){
+	margin-left: 405px;
+	width: 465px;
+}
+
+.two-images4 img:nth-of-type(2){
+	width: 265px;
+	margin-bottom: 315px;
+	margin-left: -65px;
+}
+
+.full-story{
+	font: 400 18px 'BauProMedium', sans-serif;
+    line-height: 1.6em;
+    text-align: center;
+    margin: 110px 0;
+}
+
+.full-story a{
+	position: relative;
+    line-height: 1;
+}
+
+.full-story a:after{
+	content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: black;
+    transition: width .5s ease;
+}
+
+.gradient-background{
+	color: white;
+	padding: 0 65px;
+}
+
+.persons, .partners{
+	overflow: hidden;
+	padding: 0 30px;
+}
+
+.person-info{
+	margin-bottom: 80px;
+	float: left;
+}
+
+.persons h2, .partners h2{
+	font: 400 48px Fugue;
+	text-align: center;
+    line-height: 1.3em;
+}
+
+.persons h2{
+    padding: 160px 0 180px 0;
+    width: 70%;
+    margin: 0 15%;
+}
+
+.person{
+	width: 330px;
+	margin: 0 30px 20px 30px;
+}
+
+.person-name{
+    line-height: 1.6em;   
+    text-align: center;
+}
+
+.profession{
+	font: 400 18px BauPro;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.partners h2{
+	width: 80%;
+	margin: 140px 10% 170px 10%;
+}
+
+.partner{
+	width: 250px;
+	display: block;
+	float: left;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 260px;
+}
+
+.questions{
+	border-top: 3px solid #fff;
+	margin: 55px 0 100px 0;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.questions a{
+	position: relative;
+    line-height: 1;
+    font: 400 17px 'BauProMedium', sans-serif;
+    color: white;
+}
+
+.questions a:after{
+	content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2.5px;
+    width: 100%;
+    background: white;
+    transition: width .5s ease;
+}
+
+.questions a:hover:after, .full-story a:hover:after{
+	width: 0%;
+    transition: width .5s ease;
+}
+
+.nav2{
+	margin-bottom: 20px;
+	padding-right: 65px;
+	overflow: hidden;
+	border-bottom: 1px solid #fff;
+}
+
+.all5{
+	display: block;
+    float: left;
+}
+
+footer p, .all5, .person-name {
+	font: 400 18px 'BauProMedium', sans-serif;
+    line-height: 1.7em;
+    color: white;
+}
+
+.bottom-nav ul li a{
+	font: 400 18px BauPro;
+	color: white;
+}
+
+.bottom-nav{
+	padding-bottom: 20px;
+}
+
+footer{	
+	padding-top: 40px;
+	position: relative;
+}
+
+footer a{
+	font: 400 22px Fugue;
+    line-height: 1.8em;
+    font-style: normal;
+    color: white;
+}
+
+.location{
+	margin-right: 190px;
+}
+
+.contact{
+	margin-right: 270px;
+}
+
+.location, .contact, .social, .location span, .contact a{
+	display: inline-block;
+}
+
+footer p{
+    padding: 100px 0 60px;
+}
+
+.social{
+	position: absolute;
+	top: 45px;
+}
+
+.social img{
+	display: inline-block;
+	width: 25px;
+	vertical-align: middle;
+	padding-left: 20px;
+}
+
+.social a:hover{
+	opacity: 0.4;
+}
+
+.all-rights{
+	font: 400 17px BauPro;
+	line-height: 1.7em;
+}
