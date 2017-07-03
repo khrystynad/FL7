@@ -1,0 +1,95 @@
+$contentBackground: null !default;
+$linkColor: null !default;
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font: $bodyFont;
+	background-color: $bodyBackground;
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#content{
+	width: 960px;
+  	margin: 15px auto;
+	background-color: $contentBackground;
+	padding: 20px 30px;
+	color: $textColor;
+	& a{
+		color: $linkColor;
+	}
+	& h1, h2{
+		color: $hColor;
+	}
+	& h1{
+		padding: 10px 0 25px 0;	
+	}
+	& h2{
+		padding-top: 30px;
+		padding-bottom: 15px;
+		font-style: $h2FontStyle;
+		font-weight: normal;
+	}
+	& p{
+		margin-bottom: 10px;
+	}
+	& img{
+		float: left;
+		padding: $imgPadding;
+		border: $imgBorderSize solid $imgBorderColor;
+		margin-bottom: 10px;
+		margin-top: 5px;
+	}
+	& .img-left{
+		margin-right: 20px;
+	}
+	& .img-right{
+		float: right;
+		margin-left: 20px;
+	}
+	& .brief{
+		background-color: $briefBackground;
+		float: $briefFloat;
+		width: $briefWidth;
+		font-style: italic;
+		font-weight: $briefFontWeight;
+		padding: $briefPadding;
+		margin-right: $briefMarginRight;
+		margin-bottom: 15px;
+	}
+	& table{
+  		border-collapse: collapse;
+  		margin-top: 40px;
+  		text-align: left;
+  		width: $tableWidth;
+  		background-color:$tableBackground;
+  		& tr:first-child{
+  			background-color: $tableThBackground;
+  		}
+  		& th, & td, & caption{
+  			padding: 10px 15px;
+  		}
+  		& caption{
+  			text-align: right;
+  			font-style: italic;
+  			font-size: 14px;
+  		}
+  		& th{
+  			background-color: $tableThBackground;
+  			font-weight: normal;
+  			&:not(:last-child){
+  				border-right: $thBorder;
+  			}
+  		}
+  		& tr:not(:first-child){
+  			border-bottom: 1px solid #ccc;
+  		}
+   	}
+}
