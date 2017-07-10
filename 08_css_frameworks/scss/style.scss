@@ -1,0 +1,71 @@
+$blue:   #2A74BF;
+$red:    #D7514C;
+$green:  #4D944B;
+$orange: #D8C11D;
+$grey:   #666;
+$white:	 #FFF;
+
+.navbar-default .navbar-nav{
+	& li a:hover,
+	& > .active a,
+	& > .active a:hover,
+	& li a:focus{
+	background-color: $blue;
+	color: $white;
+	}
+}
+
+h1,h2{
+	color: $blue;
+	font-weight: bold;
+}
+
+.page-header{
+	border-bottom: 1.5px solid $blue;
+	& h1, & h2{
+		margin-bottom: 0;
+	}
+}
+
+.related-class{
+	& a{
+		text-decoration: none;
+	}
+	& .related-fig{
+		text-align: center;
+		& .caption{
+			color: $white;
+			padding: 10px 0;
+		}		
+	}
+}
+
+.related-item{
+	padding-bottom: 20px;
+	&:nth-child(1) .related-fig{
+		border: 1px solid $red;
+		background-color: $red;
+	}
+	&:nth-child(2) .related-fig{
+		border: 1px solid $blue;
+		background-color: $blue;
+	}
+	&:nth-child(3) .related-fig{
+		border: 1px solid $orange;
+		background-color: $orange;
+	}
+	&:nth-child(4) .related-fig{
+		border: 1px solid $green;
+		background-color: $green;
+	}
+}
+
+footer{
+	margin-top: 20px;
+	p{
+		background-color: $grey;
+		color: $white;
+		padding: 10px 20px;
+		margin: 0;
+	}
+}

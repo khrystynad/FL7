@@ -1,0 +1,45 @@
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav > .active a, .navbar-default .navbar-nav > .active a:hover, .navbar-default .navbar-nav li a:focus {
+  background-color: #2A74BF;
+  color: #FFF; }
+
+h1, h2 {
+  color: #2A74BF;
+  font-weight: bold; }
+
+.page-header {
+  border-bottom: 1.5px solid #2A74BF; }
+  .page-header h1, .page-header h2 {
+    margin-bottom: 0; }
+
+.related-class a {
+  text-decoration: none; }
+.related-class .related-fig {
+  text-align: center; }
+  .related-class .related-fig .caption {
+    color: #FFF;
+    padding: 10px 0; }
+
+.related-item {
+  padding-bottom: 20px; }
+  .related-item:nth-child(1) .related-fig {
+    border: 1px solid #D7514C;
+    background-color: #D7514C; }
+  .related-item:nth-child(2) .related-fig {
+    border: 1px solid #2A74BF;
+    background-color: #2A74BF; }
+  .related-item:nth-child(3) .related-fig {
+    border: 1px solid #D8C11D;
+    background-color: #D8C11D; }
+  .related-item:nth-child(4) .related-fig {
+    border: 1px solid #4D944B;
+    background-color: #4D944B; }
+
+footer {
+  margin-top: 20px; }
+  footer p {
+    background-color: #666;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
