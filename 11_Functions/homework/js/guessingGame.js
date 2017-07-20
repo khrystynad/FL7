@@ -17,7 +17,6 @@ function game(){
 	while(contin) {
 		attemptCounter = 3;
 		randomNumber = random(0, maxPoint);
-		console.log(randomNumber);
 		while (attemptCounter > 0) {
 			userNumber = userInput(0, maxPoint, attemptCounter);
 			if (guessed(randomNumber, userNumber)) {
