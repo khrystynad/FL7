@@ -1,10 +1,10 @@
 class Character {
-	constructor(x, y) {
+    constructor(x, y) {
         this.x = x;
         this.y = y;
         this.health_ = 100;
-	}
-	damage() {
+    }
+    damage() {
         this.health_ -= 10;
     }
     getHealth() {
