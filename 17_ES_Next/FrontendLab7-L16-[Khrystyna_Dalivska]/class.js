@@ -1,8 +1,8 @@
 class Character {
 	constructor(x, y) {
-	this.x = x;
-    this.y = y;
-    this.health_ = 100;
+        this.x = x;
+        this.y = y;
+        this.health_ = 100;
 	}
 	damage() {
         this.health_ -= 10;
