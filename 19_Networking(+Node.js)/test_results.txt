@@ -1,0 +1,59 @@
+ Service api
+    /users
+      GET
+        √ will return positive result with status code: 200
+      POST
+        √ will return negative result with status code: 400
+        √ will return positive result with status code: 201
+        √ will return negative result with status code: 409
+    /users/1
+      GET
+        1) will return positive result with status code: 200
+      PUT
+        2) will return positive result with status code: 200
+      DELETE
+        3) will return positive result with status code: 200
+
+
+  4 passing (115ms)
+  3 failing
+
+  1) Service api /users/1 GET will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at Context.it (tests\api.tests.js:80:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  2) Service api /users/1 PUT will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at Context.it (tests\api.tests.js:98:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+  3) Service api /users/1 DELETE will return positive result with status code: 200:
+
+      AssertionError: expected 404 to equal 200
+      + expected - actual
+
+      -404
+      +200
+
+      at Context.it (tests\api.tests.js:109:16)
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)
+
+
+
+npm ERR! Test failed.  See above for more details.
