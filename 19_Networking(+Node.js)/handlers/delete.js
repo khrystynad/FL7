@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fileName = 'storage.json';
+const fileName = './storage.json';
 
 module.exports = function(app) {
 	 app.delete('/users/:id', function (req, res) {

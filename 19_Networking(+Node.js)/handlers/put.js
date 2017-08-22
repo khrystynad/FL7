@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fileName = 'storage.json';
+const fileName = './storage.json';
 const passwordHash = require('password-hash');
 
 module.exports = function(app) {

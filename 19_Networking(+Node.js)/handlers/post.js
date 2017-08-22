@@ -1,11 +1,13 @@
 const fs = require('fs');
 const passwordHash = require('password-hash');
-const fileName = 'storage.json';
+const fileName = './storage.json';
 
 module.exports = function(app) {
 	app.post("/users", function(req, res) {
 	    fs.readFile(fileName, function(err, data) {
 			if (err) throw err;
+			let body = req.body;
+			if (Object.keys(body).length !== 0) {
 			let storageData = data.length ? JSON.parse(data) : [];
 			let exists = false;
 			for (let el of storageData) {
@@ -23,6 +25,9 @@ module.exports = function(app) {
 				});
 				res.status(201).end();
 			}
+		} else {
+			res.sendStatus(400).end();
+		}
 		});
 	});
 }
