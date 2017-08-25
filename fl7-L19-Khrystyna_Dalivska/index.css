@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+body {
+	background: url('http://marsweather.ingenology.com/static/home/images/mars_bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 100%;
+	color: white;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+.information {
+	margin: 50px 0;
+	font-size: 24px;
+}
+
+.temperature {
+	font-size: 120px;
+}
+
+.not-active {
+	color: #F8F8FF;
+	cursor: default;
+}
+
+.active:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 64px;
+	text-transform: uppercase;
+	margin-bottom: 70px;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #F4A460;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.5s linear infinite;
+  	position: absolute;
+  	z-index: 1;
+	left: 45%;
+	top: 35%;
+}
+
+.info {
+	font-size: 32px;
+}
+
+.wind-power-p {
+	margin-top: 100px;
+}
+
+.date-p {
+	margin-bottom: 100px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.navigation {
+	font-size: 36px;
+}
+
+.error {
+	padding-top: 200px;
+	display: none;
+}
+
+.error h2 {
+	font-size: 56px;
+}
+
+.error p {
+	font-size: 32px;
+}
