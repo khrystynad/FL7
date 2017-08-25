@@ -128,16 +128,16 @@ document.getElementsByClassName('previous')[0].addEventListener("click", functio
 function load() {
 	document.getElementsByClassName('information')[0].style.display = 'none';
 	document.getElementsByClassName('loader')[0].style.display = 'block';
-	jsonp(`http://marsweather.ingenology.com/v1/archive/?page=${page}&format=jsonp`).then(function(data) {
+	jsonp(`http://marsweather.ingenology.com/v1/archve/?page=${page}&format=jsonp`).then(function(data) {
 		document.getElementsByClassName('error')[0].style.display = 'none';
 		currentPageData = Object.assign({}, data);
 		showWeather(currentPageData);
 		document.getElementsByClassName('loader')[0].style.display = 'none';
 		document.getElementsByClassName('information')[0].style.display = 'block';
-	}, function(err) {
+	}).catch(function(err) {
+		document.getElementsByClassName('error')[0].style.display = 'block';
 		document.getElementsByClassName('loader')[0].style.display = 'none';
-        document.getElementsByClassName('error')[0].style.display = 'block';
-	});        
+	});     
 };
 
 load();
