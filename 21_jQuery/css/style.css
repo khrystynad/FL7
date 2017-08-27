@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header, footer button, .loaded p, .square{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.container {
+	margin: 20px auto;
+	width: 400px;
+	user-select: none;
+	cursor: default;
+}
+
+header, footer button {
+	text-transform: uppercase;
+}
+
+header {
+	color: #b3b3b3;
+	overflow: hidden;
+}
+
+header h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+header p, .loaded p {
+	color: #808080;
+}
+
+header p {
+	display: inline-block;
+	font-size: 32px;
+	vertical-align: top;
+	margin: auto 8px;
+}
+
+button:disabled,  button:disabled:hover{
+	background-color: #F5F5DC;
+	color: #50e3c2;
+}
+
+.time {
+	float: left;
+	margin-left: 10px;
+}
+
+.steps {
+	float: right;
+	margin-right: 10px;
+}
+
+.time img, .steps img {
+	width: 35px;
+}
+
+.field, .loaded {
+	height: 400px;
+	width: 400px;
+}
+
+.loaded p{
+	font-size: 48px;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.field {
+	position: relative;
+}
+
+.square, .empty, .grey-square {
+	width: 98px;
+	height: 98px;
+	position: absolute;
+	border-radius: 10px;
+	margin: 1px;
+	cursor:pointer;
+}
+
+.square{
+	background-color: #4a90e2;
+	text-align: center;
+	line-height: 98px;
+	color: white;
+	font-size: 48px;
+}
+
+.grey-square {
+	background-color: #ededed;
+	z-index: -1;
+}
+
+.empty {
+	opacity: 0;
+}
+
+footer {
+	margin-top: 60px;
+}
+
+footer button {
+	display: block;
+	width: 340px;
+	height: 55px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border: 2px solid #50e3c2;
+	border-radius: 5px;
+	background-color: white;
+	font-size: 20px;
+	color: #50e3c2;
+}
+
+footer button:hover {
+	background-color: #50e3c2;
+	color: #4a4a4a;
+	cursor:pointer;
+}
+
+button:active, button:focus {
+    outline: none;
+}
