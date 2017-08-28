@@ -129,7 +129,7 @@ document.getElementsByClassName('previous')[0].addEventListener("click", functio
 function load() {
 	document.getElementsByClassName('information')[0].style.display = 'none';
 	document.getElementsByClassName('loader')[0].style.display = 'block';
-	jsonp(`http://marsweather.ingenolog.com/v1/arcive/?page=${page}&format=jsonp`).then(function(data) {
+	jsonp(`http://marsweather.ingenology.com/v1/arcive/?page=${page}&format=jsonp`).then(function(data) {
 		document.getElementsByClassName('error')[0].style.display = 'none';
 		currentPageData = Object.assign({}, data);
 		showWeather(currentPageData);
