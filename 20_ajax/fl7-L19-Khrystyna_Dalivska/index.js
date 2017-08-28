@@ -49,7 +49,8 @@ function jsonp(url) {
         var newScript = document.createElement('script');     
         newScript.setAttribute('src', url + '&callback=' + callback);
         newScript.setAttribute('id', id);
-        newScript.onerror = reject;
+        // newScript.onerror = reject;
+        newScript.addEventListener('error', reject);
         document.body.appendChild(newScript);
     });
 }
@@ -128,13 +129,13 @@ document.getElementsByClassName('previous')[0].addEventListener("click", functio
 function load() {
 	document.getElementsByClassName('information')[0].style.display = 'none';
 	document.getElementsByClassName('loader')[0].style.display = 'block';
-	jsonp(`http://marsweather.ingenology.com/v1/archive/?page=${page}&format=jsonp`).then(function(data) {
+	jsonp(`http://marsweather.ingenolog.com/v1/arcive/?page=${page}&format=jsonp`).then(function(data) {
 		document.getElementsByClassName('error')[0].style.display = 'none';
 		currentPageData = Object.assign({}, data);
 		showWeather(currentPageData);
 		document.getElementsByClassName('loader')[0].style.display = 'none';
 		document.getElementsByClassName('information')[0].style.display = 'block';
-	}).catch(function(err) {
+	}, function(err) {
 		document.getElementsByClassName('error')[0].style.display = 'block';
 		document.getElementsByClassName('loader')[0].style.display = 'none';
 	});     
